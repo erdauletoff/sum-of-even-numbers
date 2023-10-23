@@ -8,10 +8,15 @@ public class SumOfEvenNumbers {
         System.out.println(sum(array));
     }
 
-    public static int sum(int[] array){
+    public static int sum(int[] array) {
+        int res = 0;
 
-        //put your code here
+        if (array != null) {
+            for (int num : array) {
+                if (num % 2 == 0) res += num;
+            }
+        }
 
-        throw new UnsupportedOperationException();
+        return res;
     }
 }
